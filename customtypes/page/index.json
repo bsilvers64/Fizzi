@@ -27,6 +27,9 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "sky_dive": {
+              "type": "SharedSlice"
+            },
             "hero": {
               "type": "SharedSlice"
             }

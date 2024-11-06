@@ -1,6 +1,6 @@
 "use client";
 
-import { Loader, View } from "@react-three/drei";
+import { View } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
 import { Perf } from "r3f-perf";
@@ -11,7 +11,7 @@ import dynamic from "next/dynamic";
 type Props = {};
 
 
-const loader = dynamic(
+const Loader = dynamic(
   () => import("@react-three/drei").then((mod) => mod.Loader),
   {ssr: false}
 )
@@ -42,7 +42,6 @@ export default function ViewCanvas({}: Props) {
 
       {/* performance metrics */}
       {/* <Perf/> */}
-
       <ambientLight intensity={2} />
       <spotLight intensity={3} position={[1, 1, 1]} />
     </Canvas>
