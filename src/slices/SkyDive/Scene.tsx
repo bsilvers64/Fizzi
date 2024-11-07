@@ -7,7 +7,6 @@ import {
   Cloud,
   Clouds,
   Environment,
-  OrbitControls,
   Text,
 } from "@react-three/drei";
 import { useRef } from "react";
