@@ -40,7 +40,7 @@ export default function Scene({}: Props) {
       !can5ref.current ||
       !can1GroupRef.current ||
       !can2GroupRef.current ||
-      !groupRef
+      !groupRef.current
     )
       return;
 
